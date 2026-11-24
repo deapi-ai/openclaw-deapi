@@ -7,11 +7,11 @@
   "author": { "name": "deAPI", "url": "https://deapi.ai" },
   "keywords": ["deapi", "openclaw", "openclaw-plugin", "clawhub", "mcp", "image-generation", "text-to-speech", "transcription"],
   "type": "module",
-  "main": "./plugin.ts",
-  "exports": { ".": "./plugin.ts" },
-  "files": ["plugin.ts", "openclaw.plugin.json", "skills", "assets", "README.md", "LICENSE"],
+  "main": "./plugin.js",
+  "exports": { ".": "./plugin.js" },
+  "files": ["plugin.js", "openclaw.plugin.json", "skills", "assets", "README.md", "LICENSE"],
   "openclaw": {
-    "extensions": ["./plugin.ts"],
+    "extensions": ["./plugin.js"],
     "compat": { "pluginApi": ">=2026.9.7", "minGatewayVersion": "2026.9.7" },
     "build": { "openclawVersion": "2026.11.7", "pluginSdkVersion": "2026.11.7" }
   },
