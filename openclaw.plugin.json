@@ -1,0 +1,36 @@
+{
+  "id": "deapi",
+  "name": "deAPI",
+  "description": "Images, video, speech and music generation, transcription of files and YouTube, TikTok, X, Twitch and Kick links, video description and OCR through deAPI's MCP server.",
+  "version": "0.1.0",
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "deapi": {
+      "transport": "streamable-http",
+      "url": "https://mcp.deapi.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DEAPI_API_KEY}",
+        "X-Deapi-Source": "openclaw/0.1.0"
+      },
+      "requestTimeoutMs": 900000
+    }
+  },
+  "setup": {
+    "providers": [
+      {
+        "id": "deapi",
+        "envVars": [
+          "DEAPI_API_KEY"
+        ]
+      }
+    ],
+    "requiresRuntime": false
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

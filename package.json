@@ -1,0 +1,20 @@
+{
+  "name": "@deapi-ai/deapi",
+  "version": "0.1.0",
+  "description": "deAPI for OpenClaw: images, video, speech, music, transcription of YouTube/TikTok/X/Twitch/Kick links, video description and OCR through deAPI's MCP server.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/deapi-ai/openclaw-deapi.git" },
+  "author": { "name": "deAPI", "url": "https://deapi.ai" },
+  "keywords": ["deapi", "openclaw", "openclaw-plugin", "clawhub", "mcp", "image-generation", "text-to-speech", "transcription"],
+  "type": "module",
+  "main": "./plugin.ts",
+  "exports": { ".": "./plugin.ts" },
+  "files": ["plugin.ts", "openclaw.plugin.json", "skills", "assets", "README.md", "LICENSE"],
+  "openclaw": {
+    "extensions": ["./plugin.ts"],
+    "compat": { "pluginApi": ">=2026.9.7", "minGatewayVersion": "2026.9.7" },
+    "build": { "openclawVersion": "2026.11.7", "pluginSdkVersion": "2026.11.7" }
+  },
+  "dependencies": {},
+  "peerDependencies": { "openclaw": ">=2026.9.7" }
+}
