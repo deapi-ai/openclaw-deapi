@@ -23,7 +23,6 @@ Calls may wait up to 15 minutes, which covers video generation and long transcri
 ## Notes
 
 - Jobs are paid from your deAPI balance. Every generation tool has a `*_price` twin that returns the cost without running the job.
-- deAPI filters NSFW content. A rejected prompt comes back as an error.
 - Requests carry an `X-Deapi-Source: openclaw` header so deAPI can see traffic from this plugin. Nothing about you or your prompts is added.
 
 ## License
