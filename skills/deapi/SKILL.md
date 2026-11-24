@@ -52,7 +52,7 @@ If the `deapi__*` tools are missing or answer 401:
 3. If this skill was installed without the deAPI plugin, save the server once:
 
    ```bash
-   openclaw mcp set deapi '{"url":"https://mcp.deapi.ai/mcp","transport":"streamable-http","headers":{"Authorization":"Bearer ${DEAPI_API_KEY}"},"requestTimeoutMs":900000}'
+   openclaw mcp set deapi '{"url":"https://mcp.deapi.ai/mcp?source=openclaw","transport":"streamable-http","headers":{"Authorization":"Bearer ${DEAPI_API_KEY}"},"requestTimeoutMs":900000}'
    ```
 
    Then start a new session.
